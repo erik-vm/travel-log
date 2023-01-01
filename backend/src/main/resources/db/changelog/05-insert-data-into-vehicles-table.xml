@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    <changeSet id="05" author="Erik Vainumae">
+       <insert tableName="vehicles">
+           <column name="owner_id" value="1"/>
+           <column name="reg_number" value="123ABC"/>
+           <column name="current_odometer" value="88204"/>
+       </insert>
+       <insert tableName="vehicles">
+           <column name="owner_id" value="1"/>
+           <column name="reg_number" value="999XXX"/>
+           <column name="current_odometer" value="13578"/>
+       </insert>
+       <insert tableName="vehicles">
+           <column name="owner_id" value="2"/>
+           <column name="reg_number" value="DBD001"/>
+           <column name="current_odometer" value="56971"/>
+       </insert>
+       <insert tableName="vehicles">
+           <column name="owner_id" value="3"/>
+           <column name="reg_number" value="xa532c"/>
+           <column name="current_odometer" value="105676"/>
+       </insert>
+       <insert tableName="vehicles">
+           <column name="owner_id" value="3"/>
+           <column name="reg_number" value="cd912p"/>
+           <column name="current_odometer" value="22987"/>
+       </insert>
+       <insert tableName="vehicles">
+           <column name="owner_id" value="3"/>
+           <column name="reg_number" value="as309q"/>
+           <column name="current_odometer" value="158681"/>
+       </insert>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    <changeSet id="03" author="Erik Vainumae">
+        <createTable tableName="travel_logs"
+                     remarks="A table to contain all travel logs">
+            <column name="travel_log_id" type="integer" autoIncrement="true">
+                <constraints primaryKey="true" primaryKeyName="travel_log_id_pk"/>
+            </column>
+            <column name="vehicle_id" type="integer">
+                <constraints foreignKeyName="vehicle_id_fk" references="vehicles(vehicle_id)"/>
+            </column>
+            <column name="route_from" type="varchar(20)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="route_to" type="varchar(20)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="odometer_at_the_end" type="integer">
+                <constraints nullable="false"/>
+            </column>
+            <column name="travel_date" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="varchar(100)">
+                <constraints nullable="true"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

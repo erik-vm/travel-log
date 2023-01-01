@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    <changeSet id="05" author="Erik Vainumae">
+       <insert tableName="travel_logs">
+           <column name="vehicle_id" value="3"/>
+           <column name="route_from" value="Tartu"/>
+           <column name="route_to" value="Tallinn"/>
+           <column name="odometer_at_the_end" value="56808"/>
+           <column name="travel_date" value="2022-12-04"/>
+           <column name="description" value="Office visit in Tallinn."/>
+       </insert>
+        <insert tableName="travel_logs">
+            <column name="vehicle_id" value="3"/>
+            <column name="route_from" value="Tallinn"/>
+            <column name="route_to" value="Tartu"/>
+            <column name="odometer_at_the_end" value="56971"/>
+            <column name="travel_date" value="2022-12-05"/>
+            <column name="description" value="Returning back to Tartu."/>
+        </insert>
+        <insert tableName="travel_logs">
+            <column name="vehicle_id" value="1"/>
+            <column name="route_from" value="Rapla"/>
+            <column name="route_to" value="Otepaa"/>
+            <column name="odometer_at_the_end" value="88204"/>
+            <column name="travel_date" value="2022-12-12"/>
+            <column name="description" value="Skiing trip."/>
+        </insert>
+        <insert tableName="travel_logs">
+            <column name="vehicle_id" value="5"/>
+            <column name="route_from" value="Tallinn"/>
+            <column name="route_to" value="Narva"/>
+            <column name="odometer_at_the_end" value="158423"/>
+            <column name="travel_date" value="2022-12-13"/>
+            <column name="description" value="Meeting clients."/>
+        </insert>
+        <insert tableName="travel_logs">
+            <column name="vehicle_id" value="5"/>
+            <column name="route_from" value="Narva"/>
+            <column name="route_to" value="Tartu"/>
+            <column name="odometer_at_the_end" value="158600"/>
+            <column name="travel_date" value="2022-12-13"/>
+            <column name="description" value="Visiting local office."/>
+        </insert>
+        <insert tableName="travel_logs">
+            <column name="vehicle_id" value="2"/>
+            <column name="route_from" value="Tartu"/>
+            <column name="route_to" value="Riga"/>
+            <column name="odometer_at_the_end" value="13578"/>
+            <column name="travel_date" value="2022-12-13"/>
+            <column name="description" value="Meeting clients."/>
+        </insert>
+        <insert tableName="travel_logs">
+            <column name="vehicle_id" value="5"/>
+            <column name="route_from" value="Tartu"/>
+            <column name="route_to" value="Parnu"/>
+            <column name="odometer_at_the_end" value="158681"/>
+            <column name="travel_date" value="2022-12-14"/>
+            <column name="description" value="Meeting clients."/>
+        </insert>
+        <insert tableName="travel_logs">
+            <column name="vehicle_id" value="1"/>
+            <column name="route_from" value="Otepaa"/>
+            <column name="route_to" value="Tallinn"/>
+            <column name="odometer_at_the_end" value="88422"/>
+            <column name="travel_date" value="2022-12-19"/>
+            <column name="description" value="Returning from holiday."/>
+        </insert>
+
+    </changeSet>
+</databaseChangeLog>

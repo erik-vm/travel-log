@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+ http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    <changeSet id="04" author="Erik Vainumae">
+       <insert tableName="owners">
+           <column name="first_name" value="John"/>
+           <column name="last_name" value="Doe"/>
+           <column name="phone_number" value="+372123456"/>
+           <column name="email" value="john.doe@mail.com"/>
+       </insert>
+        <insert tableName="owners">
+            <column name="first_name" value="Mary"/>
+            <column name="last_name" value="Jane"/>
+            <column name="phone_number" value="+345987654"/>
+            <column name="email" value="mary.jane@mail.com"/>
+        </insert>
+        <insert tableName="owners">
+            <column name="first_name" value="Tim"/>
+            <column name="last_name" value="Tom"/>
+            <column name="phone_number" value="+45611911"/>
+            <column name="email" value="tim.tom@mail.com"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
